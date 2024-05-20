@@ -43,8 +43,9 @@ void Nhapchuoi(chuoi s){
     printf("hay nhap chuoi can xu li:");
     gets(s);
   } while( !((strlen(s)<=Maxlen)
-            &&(strstr(s," ")!=NULL)
-            &&((s[0]!=' ')&&(s[strlen(s)-1]!=' ')&&(strstr(s,"  ")==NULL))
+            &&((s[0]!=' ')
+            &&(s[strlen(s)-1]!=' ')
+            &&(strstr(s,"  ")==NULL))
             &&(strstr(s," ")!=NULL)));
 }
 char KTchuoidx(chuoi s){
